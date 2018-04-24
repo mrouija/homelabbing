@@ -3,3 +3,6 @@ Select the Servername (in Server View), then select "Hardware" in the main tab, 
 Increment size as desired, then click "Resize Disk"
 use 'fdisk -l' to find disk name (typically /dev/sda)
 use 'fdisk /dev/sda' to create a new partition of type LVM
+use 'vgdisplay' to get your Volume Group name
+use 'vgextend <volumegroupname> <yournewpartition>' to extend the group to the volume group
+
